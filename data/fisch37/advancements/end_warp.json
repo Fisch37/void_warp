@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": "Beyond the Limit",
+        "description": "Reach the end by flying into the sky",
+        "hidden": true,
+        "frame": "challenge"
+    },
+    "parent": "minecraft:end/elytra",
+    "criteria": {
+        "end": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "minecraft:overworld",
+                "to": "minecraft:the_end",
+                "player": {
+                    "location": {
+                        "position": {
+                            "y": {
+                                "max": 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

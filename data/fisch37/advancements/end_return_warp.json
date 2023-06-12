@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_eye"
+        },
+        "title": "Back from the Skies",
+        "description": "Return to the overworld by jumping into the void",
+        "hidden": true,
+        "frame": "goal"
+    },
+    "parent": "minecraft:end/root",
+    "criteria": {
+        "overworld": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "minecraft:the_end",
+                "to": "minecraft:overworld",
+                "player": {
+                    "location": {
+                        "position": {
+                            "y": {
+                                "min": 600
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

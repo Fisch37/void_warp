@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "void_warp",
+        "description": "Warps you to a different dimension when reaching extreme heights or depths",
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner: 'Fisch37'}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
