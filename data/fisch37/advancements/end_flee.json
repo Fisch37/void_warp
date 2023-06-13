@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_crystal"
+        },
+        "title": "Flee the End",
+        "description": "Flee the Dragon's wrath"
+    },
+    "parent": "fisch37:end_return_warp",
+    "criteria": {
+        "everything": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "minecraft:end/kill_dragon": false,
+                            "fisch37:end_return_warp": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
